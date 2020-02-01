@@ -1,0 +1,96 @@
+.my-footer
+  background: $white
+  &__links
+    display: flex
+    align-items: center
+    padding: 60px 0
+    justify-content: space-between
+    +lg
+      flex-wrap: wrap
+  &__logo
+    font-size: 24px
+    line-height: 24px
+    letter-spacing: -1px
+    font-weight: 600
+    margin-right: 64px
+    +xl
+    margin-right: 20px
+  &__nav
+    display: flex
+    align-items: center
+    +lg
+      order: 10
+      margin-top: 40px
+    +sm
+      margin-top: 56px
+      flex-direction: column
+      align-items: flex-start
+      width: 100%
+  &__link
+    text-transform: uppercase
+    font-size: 14px
+    line-height: 24px
+    letter-spacing: 1px
+    font-weight: 600
+    +sm
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+  &__item
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+    +sm
+      padding: 12px
+    &:not(:last-child)
+      margin-right: 48px
+      +xl
+        margin-right: 25px
+      +sm
+        margin-right: 0
+  &__social
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 48px
+    height: 48px
+    background: $hover-gray
+    border-radius: 50%
+    cursor: pointer
+    color: $gray
+    font-size: 20px
+    +sm
+      margin-top: 8px
+      margin-bottom: 8px
+    &:not(:last-child)
+      margin-right: 24px
+      +sm
+        margin-right: 35px
+  &__socials
+    display: flex
+    align-items: center
+    +sm
+      flex-wrap: wrap
+  &__lang
+    margin-right: 0 !important
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 16px 0
+    +lg
+      flex-wrap: wrap
+    +sm
+      justify-content: flex-start
+  &__text
+    font-size: 14px
+    line-height: 24px
+    color: $light-gray
+    &:not(:last-child)
+      margin-right: 16px
+    +lg
+      margin: 4px 0
+    &_emp
+      color: $gray

@@ -1,0 +1,52 @@
+.toggler
+  position: relative
+  &_active
+    .toggler__way
+      box-shadow: 0 8px 12px 0 rgba(156, 66, 245, 0.24), 0 2px 4px -1px rgba(27, 10, 82, 0.12), 0 0 1px 0 rgba(156, 66, 245, 0.24)
+      background-image: linear-gradient(121deg, #ff00aa, #9c42f5 53%, #5d2de1)
+    .toggler__circle
+      left: 18px
+  &_reverse
+    flex-direction: row-reverse
+  &__way
+    width: 40px
+    height: 24px
+    background-color: #1410290f
+    border-radius: 12px
+    position: relative
+    transition: all 0.3s
+  &__circle
+    width: 20px
+    height: 20px
+    border-radius: 50%
+    box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+    background: $white
+    position: absolute
+    top: 2px
+    left: 2px
+    transition: all 0.3s
+  &__input
+    display: none
+  &__placeholder
+    margin-left: 16px
+    font-size: 16px
+    line-height: 24px
+    &_light
+      margin: 0 17px 0 0
+      font-size: 14px
+      color: $light-gray
+  &__wrapper
+    display: flex
+    align-items: center
+    cursor: pointer
+.my-darkTheme
+  .toggler
+    &__placeholder
+      color: $white
+    &__way
+      background: rgba(224, 224, 255, 0.02)
+    &_active
+      .toggler__way
+        box-shadow: 0 8px 12px 0 rgba(156, 66, 245, 0.24), 0 2px 4px -1px rgba(27, 10, 82, 0.12), 0 0 1px 0 rgba(156, 66, 245, 0.24)
+        background-image: linear-gradient(121deg, #ff00aa, #9c42f5 53%, #5d2de1)
+  

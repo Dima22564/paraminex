@@ -1,0 +1,61 @@
+.my-input
+  display: flex
+  flex-direction: column
+  position: relative
+  &__copy
+    border: none
+    background: none
+    padding: 0
+    color: $primary
+    cursor: pointer
+    font-size: 16px
+    line-height: 24px
+    position: absolute
+    top: 13px
+    right: 16px
+  &__input
+    padding: 12px 16px
+    font-size: 16px
+    line-height: 21px
+    color: $gray
+    background: $hover-gray
+    border: solid 2px transparent
+    width: 100%
+    border-radius: 4px
+    transition: all 0.2s
+    &:hover
+      background: rgba(20, 16, 41, 0.04)
+    &::placeholder
+      color: $light-gray
+    &_disabled
+      cursor: pointer
+      color: rgba(20, 16, 41, 0.24)
+      &::placeholder
+        color: rgba(20, 16, 41, 0.24)
+    &_change
+       border-color: rgba(20, 16, 41, 0.06)
+    &_error
+      border-color: #f54562
+    &_copy
+      padding-right: 64px
+      overflow: hidden
+      text-overflow: ellipsis
+    &_textarea
+      resize: none
+      min-height: 96px
+  &__error
+    margin: 8px 0 0 16px
+    color: #f54562
+    font-size: 13px
+    line-height: 16px
+.my-darkTheme
+  .my-input
+    &__input
+      background: rgba(224, 224, 255, 0.02)
+      color: $white
+      &::placeholder
+        color: $secondaryWhite
+      &_error
+        border-color: #ff00aa
+    &__error
+      color: #ff00aa

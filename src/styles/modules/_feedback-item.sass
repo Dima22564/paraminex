@@ -1,0 +1,87 @@
+.feedback-item
+  border-radius: 12px
+  background: $white
+  height: 100%
+  box-shadow: 0 8px 8px -4px rgba(20, 16, 41, 0.06), 0 2px 4px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+  &_big
+    display: flex
+  &__wrapper
+    margin-bottom: 30px
+    +lg
+      padding: 0 !important
+      margin-bottom: 0
+      max-width: 295px
+      width: 100%
+      &:not(:last-child)
+        margin-right: 16px
+    &_big
+      margin-bottom: 30px
+      +lg
+        margin-bottom: 0
+  &__text
+    padding: 24px
+    height: 100%
+    display: flex
+    flex-direction: column
+    &_half
+      width: 50%
+  &__img
+    width: 50%
+    img
+      width: 100%
+      border-top-left-radius: 12px
+      border-bottom-left-radius: 12px
+  &__name
+    display: flex
+    align-items: center
+    margin-bottom: 43px
+  &__data
+    font-size: 20px
+    line-height: 28px
+  &__place
+    margin-top: 4px
+    font-size: 14px
+    line-height: 24px
+    color: $light-gray
+  &__avatar
+    width: 96px
+    height: 96px
+    flex-shrink: 0
+    border-radius: 50%
+    margin-right: 24px
+  &__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 24px
+  &__title
+    font-size: 24px
+    line-height: 32px
+    font-weight: bold
+  &__stars
+    display: flex
+    align-items: center
+    color: $primary
+    .mdi
+      cursor: pointer
+      &:not(:last-child)
+        margin-right: 2px
+  &__review
+    font-size: 16px
+    line-height: 28px
+    color: $light-gray
+    margin-bottom: 28px
+  &__bottom
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: auto
+    width: 100%
+  &__social
+    display: flex
+    align-items: center
+    font-size: 24px
+    color: $light-gray
+  &__link
+    &:not(:last-child)
+      margin-right: 28px

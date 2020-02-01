@@ -1,0 +1,52 @@
+.langs
+  position: relative
+  &__current
+    padding: 12px
+    display: flex
+    align-items: center
+    background: rgba(20, 16, 41, 0.02)
+    border-radius: 24px
+    text-transform: uppercase
+    font-size: 16px
+    line-height: 18px
+    border: none
+  &__text
+    margin-left: 12px
+    letter-spacing: 1px
+    font-weight: 600
+    &_secondary
+      margin-left: 13px
+  &__list
+    position: absolute
+    bottom: 0
+    right: 0
+    width: 100%
+    min-width: 255px
+    transform: translateY(102%)
+    background: $white
+    border-radius: 12px
+    z-index: 555
+    box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+  &__item
+    padding: 9px 20px
+    cursor: pointer
+    transition: all 0.2s
+    font-size: 14px
+    display: flex
+    align-items: center
+    &:hover
+      background: rgba(20, 16, 41, 0.02)
+  &__check
+    margin-left: auto
+    color: $primary
+.my-darkTheme
+  .langs
+    &__current
+      background: rgba(224, 224, 255, 0.02)
+    &__text
+      color: $white
+      &_secondary
+        color: $secondaryWhite
+    &__list
+      box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4)
+      background-color: #27273e

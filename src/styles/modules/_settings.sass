@@ -1,0 +1,84 @@
+.settings
+  margin-left: 12px
+  position: relative
+  &__btn
+    display: flex
+    align-items: center
+    cursor: pointer
+  &__arrow
+    margin-left: 10px
+    font-size: 20px
+    transition: all 0.2s
+    &_rotate
+      transform: rotate(180deg)
+  &__img
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      border-radius: 50%
+  &__items
+    display: flex
+    flex-direction: column
+    background: $white
+    padding: 16px 0
+    border-radius: 12px
+    box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.06), 0 4px 8px -1px rgba(20, 16, 41, 0.06), 0 0 1px 0 rgba(20, 16, 41, 0.12)
+    min-width: 255px
+    position: absolute
+    right: 0
+    bottom: 0
+    transform: translateY(104%)
+    z-index: 555
+  &__item
+    display: flex
+    align-items: center
+    font-size: 14px
+    line-height: 16px
+    padding: 10px 16px 10px 20px
+    cursor: pointer
+    background: $white
+    transition: all 0.2s
+    &:hover
+      background: $hover-gray
+    &_emp
+      margin-bottom: 16px
+    &_btn
+      border: none
+      margin-top: 16px
+      color: $gray
+  &__icon
+    margin-right: 12px
+    font-size: 18px
+  &__text
+    &_secondary
+      margin-left: auto
+      color: $light-gray
+  &__name
+    margin-bottom: 24px
+    padding-left: 24px
+    letter-spacing: 1px
+    line-height: 24px
+.my-darkTheme
+  .settings
+    &__arrow
+      color: $secondaryWhite
+    &__items
+      box-shadow: 0 16px 16px -4px rgba(20, 16, 41, 0.24), 0 4px 8px -1px rgba(20, 16, 41, 0.24), 0 0 1px 0 rgba(20, 16, 41, 0.4)
+      background-color: #27273e
+    &__item
+      background: transparent
+      &:hover
+        background: rgba(224, 224, 255, 0.02)
+    &__text
+      color: $white
+      &_secondary
+        color: $secondaryWhite
+    &__icon
+      color: $secondaryWhite
+    &__name
+      color: $secondaryWhite
